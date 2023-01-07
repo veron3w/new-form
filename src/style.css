@@ -1,0 +1,121 @@
+:root {
+  --color-fundo: #0d0d0e;
+  --color-blue: #311439;
+  --color-grey: #e3e3e3;
+  --color-form: #1b191c;
+  --color-inputcolor: #ffffff;
+  --color-button: #27053f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #131a;
+}
+
+body {
+  background-color: var(--color-fundo);
+}
+
+h1 {
+  color: #eeeaff;
+  font-family: "Poppins", sans-serif;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.form {
+  background-color: var(--color-form);
+  box-shadow: rgba(16, 12, 36, 0.69) 0px 20px 30px -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 32rem;
+  height: 40rem;
+  border-radius: 1rem;
+}
+
+.inputs {
+  box-shadow: 1.9px 3.8px 3.8px hsl(0deg 0% 0% / 0.44);
+  font-family: "Silkscreen", sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #0000006e;
+  transition: 0.3s;
+  width: 28rem;
+  padding: 10px 10px;
+}
+
+.inputs:hover{
+   transform: scaleX(1.02);
+}
+
+.inputs:focus {
+  border: 2px solid;
+  border-color: #5b20cf;
+
+}
+
+.inputs::placeholder {
+    color: #bacefa50;
+}
+
+.textarea::placeholder {
+  color: #bacefa50;
+}
+
+.textarea {
+  font-family: "Silkscreen", sans-serif;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #0000006e;
+  width: 28rem;
+  padding: 10px 10px;
+}
+
+.textarea:hover{
+    transform: scaleX(1.02);
+}
+
+.textarea:focus {
+  border: 2px solid;
+  border-color: #5b20cf;
+}
+
+input,
+textarea {
+  color: #dfd4d4;
+  background-color: #1e1a22;
+}
+
+.button input {
+  width: 28rem;
+  height: 2.5rem;
+  background-color: var(--color-button);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Poppins", cursive;
+  font-size: 1.2rem;
+}
+
+.button input:hover {
+  background-color: #571288;
+  transform: scaleX(1.02);
+}
+
+@media (max-width: 550px) {
+  .form {
+    font-size: 1rem;
+  }
+}

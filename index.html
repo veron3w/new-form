@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário - V1</title>
+
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Silkscreen&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="content">
+      <form action="#" class="form">
+        <h1>Formulário</h1>
+
+        <div class="form1 name">
+          <label for="name"></label>
+          <input class="inputs"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Digite seu nome..."
+            required
+          />
+        </div>
+
+        <div class="form1 email">
+          <label for="email"></label>
+          <input class="inputs" 
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite seu E-mail..."
+            required
+          />
+        </div>
+
+        <div class="form1 password">
+          <label for="password"></label>
+          <input class="inputs" 
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Digite sua senha..."
+            required
+          />
+        </div>
+
+        <div class="form1 confirm-password">
+          <label for="password"></label>
+          <input class="inputs" 
+            type="password"
+            name="password"
+            id="confirmPassword"
+            placeholder="Confirme sua senha..."
+            required
+          />
+        </div>
+
+        <div class="form1 aboutYourself">
+            <textarea class="textarea" name="text" id="descricao" cols="25" rows="5" placeholder="Fale mais sobre você..."></textarea>
+            </textarea>
+        </div>
+
+        <div class="button">
+          <input
+            type="submit"
+            name="submit"
+            id="submit"
+            value="Enviar formulário!"
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
