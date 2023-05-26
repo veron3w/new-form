@@ -7,12 +7,6 @@
   --color-button: #1e0c2c;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: #131a;
-}
 
 body {
   background-color: var(--color-fundo);
